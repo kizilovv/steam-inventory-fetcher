@@ -23,12 +23,16 @@
     "node": ">=18.0.0"
   },
   "keywords": ["steam", "cs2", "csgo", "inventory", "steam-api", "proxy", "rate-limit", "cache"],
-  "author": "",
+  "author": "Artem Kiziloff <artem.kiziloff@gmail.com> (https://github.com/kizilovv)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/kizilovv/steam-inventory-fetcher.git"
   },
+  "bugs": {
+    "url": "https://github.com/kizilovv/steam-inventory-fetcher/issues"
+  },
+  "homepage": "https://github.com/kizilovv/steam-inventory-fetcher#readme",
   "dependencies": {
     "https-proxy-agent": "^7.0.6"
   },
