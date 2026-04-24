@@ -1,0 +1,40 @@
+{
+  "name": "steam-inventory-fetcher",
+  "version": "0.1.0",
+  "description": "Production-grade Steam inventory fetcher with proxy rotation, per-IP rate limiting, Redis caching and change fingerprinting. No Steam auth required for public inventories.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "example:basic": "tsx examples/basic.ts",
+    "example:proxies": "tsx examples/with-proxies.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["steam", "cs2", "csgo", "inventory", "steam-api", "proxy", "rate-limit", "cache"],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "https-proxy-agent": "^7.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
